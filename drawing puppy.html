@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Puppy Drawing</title>
+    <style>
+        :root {
+            --puppy-color: #c68642; /* CHANGE THIS COLOR */
+        }
+
+        body {
+            background-color: #e3f2fd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .puppy {
+            position: relative;
+        }
+
+        .head {
+            width: 150px;
+            height: 150px;
+            background-color: var(--puppy-color);
+            border-radius: 50%;
+        }
+
+        .ear {
+            width: 50px;
+            height: 70px;
+            background-color: var(--puppy-color);
+            position: absolute;
+            top: -20px;
+            border-radius: 50%;
+        }
+
+        .ear.left {
+            left: -20px;
+        }
+
+        .ear.right {
+            right: -20px;
+        }
+
+        .eye {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 60px;
+        }
+
+        .eye.left {
+            left: 45px;
+        }
+
+        .eye.right {
+            right: 45px;
+        }
+
+        .nose {
+            width: 12px;
+            height: 10px;
+            background-color: black;
+            position: absolute;
+            top: 85px;
+            left: 69px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="puppy">
+        <div class="ear left"></div>
+        <div class="ear right"></div>
+
+        <div class="head">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+        </div>
+    </div>
+
+</body>
+</html>
