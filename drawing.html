@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Puppy Drawing</title>
+    <title>Puppy Drawings</title>
+
     <style>
-        :root {
-            --puppy-color: #c68642; /* CHANGE THIS COLOR */
+        body {
+            background-color: lightblue;
+            text-align: center;
+            font-family: Arial;
         }
 
-        body {
-            background-color: #e3f2fd;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        :root {
+            --dog-color: brown;   /* CHANGE COLOR NAME HERE */
+        }
+
+        .row {
+            margin-top: 50px;
         }
 
         .puppy {
+            display: inline-block;
+            margin: 30px;
             position: relative;
         }
 
-        .head {
-            width: 150px;
-            height: 150px;
-            background-color: var(--puppy-color);
+        .face {
+            width: 120px;
+            height: 120px;
+            background-color: var(--dog-color);
             border-radius: 50%;
+            position: relative;
         }
 
         .ear {
-            width: 50px;
-            height: 70px;
-            background-color: var(--puppy-color);
+            width: 35px;
+            height: 55px;
+            background-color: var(--dog-color);
             position: absolute;
-            top: -20px;
+            top: -15px;
             border-radius: 50%;
         }
 
-        .ear.left {
-            left: -20px;
-        }
-
-        .ear.right {
-            right: -20px;
-        }
+        .ear.left { left: -15px; }
+        .ear.right { right: -15px; }
 
         .eye {
             width: 10px;
@@ -49,41 +50,62 @@
             background-color: black;
             border-radius: 50%;
             position: absolute;
-            top: 60px;
+            top: 45px;
         }
 
-        .eye.left {
-            left: 45px;
-        }
-
-        .eye.right {
-            right: 45px;
-        }
+        .eye.left { left: 35px; }
+        .eye.right { right: 35px; }
 
         .nose {
             width: 12px;
             height: 10px;
             background-color: black;
             position: absolute;
-            top: 85px;
-            left: 69px;
+            top: 70px;
+            left: 54px;
             border-radius: 50%;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="puppy">
-        <div class="ear left"></div>
-        <div class="ear right"></div>
+    <h1>Our Cute Puppies 🐶</h1>
+    <h3>Simple CSS Drawing</h3>
 
-        <div class="head">
-            <div class="eye left"></div>
-            <div class="eye right"></div>
-            <div class="nose"></div>
+    <div class="row">
+
+        <div class="puppy">
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+            <div class="face">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="nose"></div>
+            </div>
         </div>
+
+        <div class="puppy">
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+            <div class="face">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="nose"></div>
+            </div>
+        </div>
+
+        <div class="puppy">
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+            <div class="face">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="nose"></div>
+            </div>
+        </div>
+
     </div>
 
 </body>
 </html>
-
