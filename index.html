@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Puppy Shop Poster</title>
+    <title>Puppy Love Store</title>
 
     <style>
         body {
+            margin: 0;
             background-color: linen;
             font-family: Georgia;
-            font-size: 18px;   /* CHANGE SIZE HERE */
+            font-size: 18px;   /* CHANGE FONT SIZE HERE */
             text-align: center;
         }
 
-        .poster {
-            width: 700px;
-            margin: 40px auto;
+        /* HERO SECTION */
+        .hero {
             background-color: bisque;
-            padding: 30px;
-            border-radius: 15px;
+            padding: 50px 20px;
         }
 
-        .sticky {
-            background-color: lightyellow;
-            width: 250px;
-            margin: auto;
-            padding: 15px;
-            transform: rotate(-3deg);
-            font-weight: bold;
+        .badge {
+            background-color: darkorange;
+            color: white;
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 15px;
         }
 
         h1 { color: saddlebrown; }
@@ -34,15 +34,36 @@
         h4 { color: chocolate; }
         h5 { color: brown; }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+        /* STICKY NOTE */
+        .sticky {
+            background-color: lightyellow;
+            width: 280px;
+            margin: 30px auto;
+            padding: 15px;
+            transform: rotate(-3deg);
+            font-weight: bold;
         }
 
+        /* BREED CARDS */
+        .breeds {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .card {
+            background-color: wheat;
+            width: 180px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* BUTTON */
         a {
             display: inline-block;
-            margin-top: 25px;
-            padding: 12px 20px;
+            margin: 30px 0;
+            padding: 12px 22px;
             background-color: darkorange;
             color: white;
             text-decoration: none;
@@ -53,35 +74,57 @@
         a:hover {
             background-color: orangered;
         }
+
+        /* FOOTER */
+        .footer {
+            background-color: saddlebrown;
+            color: white;
+            padding: 15px;
+            font-size: 14px;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="poster">
+    <div class="hero">
 
-        <div class="sticky">
-            🐾 Puppies Available 🐾
-        </div>
+        <div class="badge">🐾 Since 2026</div>
 
         <h1>PUPPY LOVE STORE</h1>
-        <h2>Your Happiness Starts Here</h2>
+        <h2>Your Happiness Starts With a Paw 🐶</h2>
 
-        <h3>Popular Breeds</h3>
-        <ul>
-            <li>Labrador Retriever</li>
-            <li>Golden Retriever</li>
-            <li>Pomeranian</li>
-            <li>German Shepherd</li>
-        </ul>
+        <div class="sticky">
+            Healthy • Vaccinated • Home Raised
+        </div>
 
-        <h4>Why Choose Our Puppies?</h4>
-        <p>Healthy • Vaccinated • Playful • Friendly</p>
+        <h3>Popular Puppy Breeds</h3>
 
-        <h5>Location: Trusted Home Breeders</h5>
+        <div class="breeds">
+            <div class="card">
+                <h4>🐕 Labrador</h4>
+                <p>Friendly & Loyal</p>
+            </div>
+
+            <div class="card">
+                <h4>🐕 Golden Retriever</h4>
+                <p>Playful & Loving</p>
+            </div>
+
+            <div class="card">
+                <h4>🐕 Pomeranian</h4>
+                <p>Cute & Energetic</p>
+            </div>
+        </div>
+
+        <h5>Trusted Breeders • Happy Homes</h5>
 
         <a href="drawing.html">View Puppy Drawings</a>
 
+    </div>
+
+    <div class="footer">
+        © 2026 Puppy Love Store | Designed with HTML & CSS
     </div>
 
 </body>
